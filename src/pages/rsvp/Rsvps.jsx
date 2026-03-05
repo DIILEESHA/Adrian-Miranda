@@ -5,7 +5,7 @@ import { db } from "./firebaseConfig";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import usImage from '../../assets/us.jpg';
 const Rsvps = () => {
   const [ceremony, setCeremony] = useState({
     attending: "", // yes / no
@@ -133,7 +133,11 @@ const Rsvps = () => {
   };
 
   return (
-    <div className="rsvp tropical_theme">
+    <div className="rsvp tropical_theme"
+    style={{
+    backgroundImage: `url(${usImage})`,
+  }}
+    >
         <div className="tosty">
 
       <ToastContainer position="top-right" />

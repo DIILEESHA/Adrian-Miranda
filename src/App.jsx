@@ -1,22 +1,27 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import Header from './components/header/Header';
-import Intro from './components/intro/Intro';
-import Envelope from './components/env/Envelope';
-import Itinerary from './components/it/Itinerary';
-import Count from './components/count/Count';
-import Dresscode from './components/dress/Dresscode';
-import Story from './components/story/Story';
-import Faq from './components/faqs/Faq';
-import Party from './pages/party/Party';
-import Nav from './components/nav/Nav';
-import All from './components/faqs/All';
-import Things from './components/things/Things';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import Header from "./components/header/Header";
+import Intro from "./components/intro/Intro";
+import Envelope from "./components/env/Envelope";
+import Itinerary from "./components/it/Itinerary";
+import Count from "./components/count/Count";
+import Dresscode from "./components/dress/Dresscode";
+import Story from "./components/story/Story";
+import Faq from "./components/faqs/Faq";
+import Party from "./pages/party/Party";
+import Nav from "./components/nav/Nav";
+import All from "./components/faqs/All";
+import Things from "./components/things/Things";
 import heys from "./assets/hey.jpg";
-import Reg from './components/reg/Reg';
-import Alls from './pages/schedule/Alls';
-import Travels from './pages/travel/Travels';
-import Pwd from './Pwd';
+import Reg from "./components/reg/Reg";
+import Alls from "./pages/schedule/Alls";
+import Travels from "./pages/travel/Travels";
+import Pwd from "./Pwd";
 import Rsvps from "./pages/rsvp/Rsvps";
 import AdminDashboard from "./pages/rsvp/AdminDashboard";
 
