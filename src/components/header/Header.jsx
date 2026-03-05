@@ -1,6 +1,6 @@
 import "./header.css";
 import img1 from "../../assets/us.JPG";
-import img2 from "../../assets/us2.JPG";
+import img2 from "../../assets/us2.jpg";
 import img3 from "../../assets/us3.JPG";
 import img4 from "../../assets/us4.jpg";
 import img5 from "../../assets/us5.jpg";
