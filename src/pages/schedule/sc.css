@@ -5,3 +5,15 @@
 .mg{
     font-size: 90px!important;
 }
+
+
+
+@media screen and (max-width:700px){
+    .mgs{
+        font-size: 30px!important;
+    }
+
+    .mg{
+        font-size: 40px!important;
+    }
+}
