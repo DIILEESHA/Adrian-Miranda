@@ -1,0 +1,58 @@
+.wedding {
+  background-image: url("../../assets/paper.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+}
+.jaha{
+    padding-top: 50px;
+}
+
+.iio{
+    margin: 0 auto!important;
+    text-align: center!important;
+}
+.party_rectangle{
+    padding: 50px 0 100px 0;
+}
+.party_grid {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  /* From https://css.glass */
+background: rgba(97, 96, 96, 0.107);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  row-gap: 50px;
+  padding: 50px;
+}
+
+.party_sub{
+    text-align: center;
+    display: flex;flex-direction: column;
+    align-items: center;
+}
+
+.mavan{
+    display: flex;align-items: center;justify-content: center;
+}
+
+.party_img {
+  width: 200px;
+}
+.role{
+    font-family: "seasons";
+    font-weight: 800;
+}
+
+.role_name{
+    font-family: "libre";
+}

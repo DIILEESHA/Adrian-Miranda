@@ -1,0 +1,87 @@
+.en {
+  background-image: url("../../assets/us5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 60px 20px;
+}
+
+/* Image */
+.en_img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+  height: 80vh;
+  object-fit: contain;
+}
+
+
+/* ======================
+   1200px
+   ====================== */
+@media (max-width:1200px){
+
+  .en_img{
+    height:70vh;
+    max-width:800px;
+  }
+
+}
+
+
+/* ======================
+   992px
+   ====================== */
+@media (max-width:992px){
+
+  .en_img{
+    height:60vh;
+    max-width:700px;
+  }
+
+}
+
+
+/* ======================
+   768px
+   ====================== */
+@media (max-width:768px){
+
+  .en{
+    padding:40px 15px;
+  }
+
+  .en_img{
+    height:50vh;
+  }
+
+}
+
+
+/* ======================
+   576px
+   ====================== */
+@media (max-width:576px){
+
+  .en_img{
+    height:40vh;
+  }
+
+}
+
+
+/* ======================
+   400px
+   ====================== */
+@media (max-width:400px){
+
+  .en_img{
+    height:35vh;
+  }
+
+}

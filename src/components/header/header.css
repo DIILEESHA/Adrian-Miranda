@@ -1,0 +1,224 @@
+.header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Slider wrapper */
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Each slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Dynamic animation */
+  animation: slideAnimation calc(var(--total-slides) * 5s) infinite;
+  animation-delay: calc(var(--slide-index) * 5s);
+  opacity: 0;
+}
+
+/* Animation */
+@keyframes slideAnimation {
+  0% { opacity: 0; transform: scale(1.1); }
+  10% { opacity: 1; transform: scale(1); }
+  33% { opacity: 1; transform: scale(1); }
+  43% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 0; transform: scale(0.9); }
+}
+
+/* Content overlay */
+.content {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  inset: 0;
+  bottom: -160px;
+  text-align: center;
+}
+
+/* Semi-transparent overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000007b;
+  z-index: 1;
+}
+
+/* Text styling */
+.header_date {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.couple_name {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.couple_solo {
+  font-family: "Seasons", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+}
+.and {
+  font-family: "Lux", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  padding: 0 40px;
+}
+.first_charcter {
+  font-family: "Lux", sans-serif;
+  font-size: 130px;
+}
+
+
+
+/* =========================
+   1200px and below (Small laptops)
+   ========================= */
+@media (max-width: 1200px) {
+  .couple_solo {
+    font-size: 80px;
+  }
+
+  .and {
+    font-size: 80px;
+    padding: 0 30px;
+  }
+
+  .first_charcter {
+    font-size: 100px;
+  }
+
+  .header_date {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   992px and below (Tablets)
+   ========================= */
+@media (max-width: 992px) {
+  .couple_solo {
+    font-size: 65px;
+  }
+
+  .and {
+    font-size: 65px;
+    padding: 0 20px;
+  }
+
+  .first_charcter {
+    font-size: 85px;
+  }
+
+  .header_date {
+    font-size: 16px;
+  }
+
+  .content {
+    bottom: -120px;
+  }
+}
+
+/* =========================
+   768px and below (Large phones)
+   ========================= */
+@media (max-width: 768px) {
+  .couple_solo {
+    font-size: 50px;
+  }
+
+  .and {
+    font-size: 50px;
+    padding: 0 15px;
+  }
+
+  .first_charcter {
+    font-size: 65px;
+  }
+
+  .header_date {
+    font-size: 14px;
+  }
+
+  .content {
+    bottom: -80px;
+    padding: 0 20px;
+  }
+}
+
+/* =========================
+   576px and below (Mobile)
+   ========================= */
+@media (max-width: 576px) {
+  .couple_solo {
+    font-size: 48px;
+  }
+
+  .and {
+    font-size: 38px;
+    padding: 0 10px;
+  }
+
+  .first_charcter {
+    font-size: 60px;
+  }
+.jfc{
+  font-size: 40px;
+}
+
+.jfcc{
+  font-size: 55px;
+}
+  .header_date {
+    font-size: 13px;
+  }
+
+  .content {
+    bottom: -40px;
+  }
+
+  .couple_name {
+    /* flex-direction: column; */
+    text-align: center!important;
+    margin: 0 auto;
+    gap: 10px;
+  }
+}
+
+/* =========================
+   400px and below (Small phones)
+   ========================= */
+@media (max-width: 400px) {
+  .couple_solo {
+    /* font-size: 30px; */
+  }
+
+  .and {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .first_charcter {
+    /* font-size: 38px; */
+  }
+
+  .header_date {
+    font-size: 12px;
+  }
+}

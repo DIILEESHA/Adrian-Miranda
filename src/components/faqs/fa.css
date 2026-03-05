@@ -1,0 +1,52 @@
+.accordin_space {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.trigger {
+  padding: 10px;
+  background-color: transparent;
+  font-weight: 800;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  font-family: "libre";
+  font-size: 14px;
+  line-height: 150%;
+}
+.trigger:hover {
+  text-decoration: none;
+}
+.maina {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.acco {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fker {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #33333353;
+  border-bottom-color: transparent;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  opacity: 60%;
+  line-height: 150%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}

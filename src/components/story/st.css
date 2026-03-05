@@ -1,0 +1,201 @@
+.hnb{
+    font-size: 60px!important;
+}
+
+.hnbx{
+    font-size: 80px;
+}
+.story_rectangle{
+    background-image: url("../../assets/rectangle.jpg");
+    max-width: 650px;
+    background-position: center center;
+    background-size: cover;
+    margin: 10px auto;
+    padding: 80px;
+    position: relative;
+}
+.envas{
+    top: -140px;
+    left: 0;
+    right: 0;
+    display: flex;align-items: center;justify-content: center;
+position: absolute;
+}
+.ena_img{
+    width: 180px;
+}
+.yosa{
+    padding:0 10px ;
+}
+.story{
+    background-image: url("../../assets/storyc.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding:160px 80px;
+}
+.aha{
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.story_para{
+    font-family: "libre";
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+
+
+/* ======================
+   1200px and below
+   ====================== */
+@media (max-width: 1200px) {
+  .hnb {
+    font-size: 50px !important;
+  }
+
+  .hnbx {
+    font-size: 70px;
+  }
+
+  .story_rectangle {
+    max-width: 600px;
+    padding: 70px;
+  }
+
+  .story {
+    padding: 140px 60px;
+  }
+
+  .ena_img {
+    width: 160px;
+  }
+}
+
+/* ======================
+   992px and below
+   ====================== */
+@media (max-width: 992px) {
+  .hnb {
+    font-size: 45px !important;
+  }
+
+  .hnbx {
+    font-size: 60px;
+  }
+
+  .story_rectangle {
+    max-width: 520px;
+    padding: 60px;
+  }
+
+  .story {
+    padding: 120px 40px;
+  }
+
+  .ena_img {
+    width: 140px;
+  }
+
+  .envas {
+    top: -120px;
+  }
+}
+
+/* ======================
+   768px and below
+   ====================== */
+@media (max-width: 768px) {
+  .hnb {
+    font-size: 38px !important;
+  }
+
+  .hnbx {
+    font-size: 50px;
+  }
+
+  .story_rectangle {
+    max-width: 450px;
+    padding: 50px 40px;
+  }
+
+  .story {
+    padding: 100px 25px;
+  }
+
+  .ena_img {
+    width: 120px;
+  }
+
+  .envas {
+    top: -100px;
+  }
+
+  .story_para {
+    font-size: 15px;
+  }
+}
+
+/* ======================
+   576px and below
+   ====================== */
+@media (max-width: 576px) {
+  .hnb {
+    font-size: 32px !important;
+  }
+.aha{
+    margin-bottom: 0px;
+}
+
+  .yosa{
+    padding: 0;
+  }
+
+  .hnbx {
+    font-size: 60px;
+  }
+
+  .story_rectangle {
+    max-width: 100%;
+    padding: 40px 25px;
+  }
+
+  .story {
+    padding: 80px 20px;
+  }
+
+  .ena_img {
+    width: 100px;
+  }
+
+  .envas {
+    top: -70px;
+  }
+
+  .story_para {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+/* ======================
+   400px and below
+   ====================== */
+@media (max-width: 400px) {
+  .hnb {
+    font-size: 28px !important;
+  }
+
+  .hnbx {
+    /* font-size: 34px;  */
+  }
+
+  .ena_img {
+    width: 80px;
+  }
+
+  .story_para {
+    font-size: 13px;
+  }
+}

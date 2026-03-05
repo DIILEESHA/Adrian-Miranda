@@ -1,0 +1,116 @@
+.logo_png{
+    width: 300px;
+    margin-top: -50px;
+    /* margin-bottom: -50px; */
+}
+
+
+.intro{
+    width: 100%;
+    display: flex;flex-direction: column;
+    align-items: center;justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    padding: 80px ;
+    background-image: url("../../assets/paper.jpg");
+}
+
+.intro_p{
+    font-family: "libre";
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    line-height: 150%;
+}
+
+
+
+/* ======================
+   1200px and below
+   ====================== */
+@media (max-width: 1200px) {
+  .logo_png {
+    width: 260px;
+    margin-top: -40px;
+  }
+
+  .intro {
+    padding: 70px 60px;
+  }
+
+  .intro_p {
+    width: 70%;
+    font-size: 19px;
+  }
+}
+
+/* ======================
+   992px and below
+   ====================== */
+@media (max-width: 992px) {
+  .logo_png {
+    width: 220px;
+    margin-top: -30px;
+  }
+
+  .intro {
+    padding: 60px 40px;
+  }
+
+  .intro_p {
+    width: 80%;
+    font-size: 18px;
+  }
+}
+
+/* ======================
+   768px and below
+   ====================== */
+@media (max-width: 768px) {
+  .logo_png {
+    width: 180px;
+    margin-top: -20px;
+  }
+
+  .intro {
+    padding: 50px 25px;
+  }
+
+  .intro_p {
+    width: 90%;
+    font-size: 17px;
+  }
+}
+
+/* ======================
+   576px and below
+   ====================== */
+@media (max-width: 576px) {
+  .logo_png {
+    width: 150px;
+    margin-top: -10px;
+  }
+
+  .intro {
+    padding: 40px 20px;
+  }
+
+  .intro_p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+/* ======================
+   400px and below
+   ====================== */
+@media (max-width: 400px) {
+  .logo_png {
+    width: 130px;
+  }
+
+  .intro_p {
+    font-size: 15px;
+  }
+}

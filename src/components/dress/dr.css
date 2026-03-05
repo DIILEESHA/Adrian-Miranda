@@ -1,0 +1,102 @@
+.yo{
+    padding: 0 15px;
+}
+
+
+
+.dress_card{
+    margin-top: 30px;
+    display: flex;
+    max-width: 1000px;
+    gap: 20px;
+    margin: 30px auto;
+}
+.img_sub{
+    width: 800px;
+}
+.card_img{
+    width: 100%;
+    padding: 10px;
+    height: 50vh;
+  border: 3px solid #3333331f;
+
+    object-fit: cover;
+}
+
+
+/* =====================
+   1200px and below
+   ===================== */
+@media (max-width: 1200px) {
+  .dress_card {
+    max-width: 900px;
+    gap: 18px;
+  }
+
+  .img_sub {
+    width: 100%;
+  }
+
+  .card_img {
+    height: 45vh;
+  }
+}
+
+/* =====================
+   992px and below
+   ===================== */
+@media (max-width: 992px) {
+  .dress_card {
+    max-width: 750px;
+    gap: 15px;
+  }
+
+  .card_img {
+    height: 40vh;
+  }
+}
+
+/* =====================
+   768px and below
+   ===================== */
+@media (max-width: 768px) {
+  .dress_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .img_sub {
+    width: 100%;
+  }
+
+  .card_img {
+    height: 35vh;
+  }
+}
+
+/* =====================
+   576px and below
+   ===================== */
+@media (max-width: 576px) {
+  .yo {
+    padding: 0 0px;
+  }
+
+  .dress_card {
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  .card_img {
+    height: 30vh;
+  }
+}
+
+/* =====================
+   400px and below
+   ===================== */
+@media (max-width: 400px) {
+  .card_img {
+    height: 25vh;
+  }
+}

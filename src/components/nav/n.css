@@ -1,0 +1,149 @@
+/* ===== Navbar default (transparent) ===== */
+.nav {
+  position: fixed;
+  top: 40px;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 20px 40px;
+  border-radius: 40px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ===== Navbar when scrolled ===== */
+.nav.nav_scrolled {
+  background-color: #00000066;
+  border: 1px solid #dddddd43;
+  border-radius: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Navbar container */
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+/* Logo */
+.nav_logo {
+  font-family: "Seasons", cursive;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Desktop menu */
+.nav_ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_li {
+  font-family: "Seasons", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Link style */
+.nav_li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* ===== Hover Animation for wedding vibe ===== */
+.nav_li:hover a {
+  color: #ffd7a8; /* soft golden cream */
+}
+
+.nav_li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: #ffd7a8;
+  transition: all 0.4s ease;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.nav_li:hover::after {
+  width: 70%;
+  box-shadow: 0 0 8px #ffd7a8, 0 0 12px #ffd7a8;
+}
+
+/* Mobile hamburger */
+.nav_mobile_icon {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    padding: 15px 25px;
+    top: 20px;
+    border-radius: 0;
+  }
+
+  .nav_ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #000000aa;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+  }
+
+  .nav_ul.nav_ul_mobile_open {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out forwards;
+  }
+
+  .nav_li {
+    font-size: 18px;
+  }
+
+  .nav_mobile_icon {
+    display: block;
+  }
+
+  /* Remove hover effect on mobile */
+  .nav_li::after {
+    display: none;
+  }
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
