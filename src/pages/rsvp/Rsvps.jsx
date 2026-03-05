@@ -5,7 +5,7 @@ import { db } from "./firebaseConfig";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import usImage from '../../assets/us.jpg';
+import usImage from '../../assets/us.JPG';
 const Rsvps = () => {
   const [ceremony, setCeremony] = useState({
     attending: "", // yes / no
