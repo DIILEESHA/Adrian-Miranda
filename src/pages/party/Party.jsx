@@ -43,16 +43,16 @@ const Party = () => {
   return (
     <div className="wedding">
       <div className="couple_name jaha">
-        <h2 className="couple_solo">
-          <span className="first_charcter"> T</span>he
+        <h2 className="couple_solo jfc">
+          <span className="first_charcter jfcc"> T</span>he
         </h2>
         <h2 className="yo"></h2>
-        <h2 className="couple_solo">
-          <span className="first_charcter">R</span>oyal
+        <h2 className="couple_solo jfc">
+          <span className="first_charcter jfcc">R</span>oyal
         </h2>
         <h2 className="yo"></h2>
-        <h2 className="couple_solo">
-          <span className="first_charcter">C</span>ourt
+        <h2 className="couple_solo jfc">
+          <span className="first_charcter jfcc">C</span>ourt
         </h2>
       </div>
 

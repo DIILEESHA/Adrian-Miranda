@@ -1,3 +1,4 @@
+/* Container */
 .wedding {
   background-image: url("../../assets/paper.jpg");
   background-repeat: no-repeat;
@@ -7,52 +8,130 @@
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
-  /* align-items: center; */
   justify-content: center;
 }
-.jaha{
-    padding-top: 50px;
+
+/* Top padding */
+.jaha {
+  padding-top: 50px;
 }
 
-.iio{
-    margin: 0 auto!important;
-    text-align: center!important;
+/* Centered content */
+.iio {
+  margin: 0 auto !important;
+  text-align: center !important;
 }
-.party_rectangle{
-    padding: 50px 0 100px 0;
+
+/* Section padding */
+.party_rectangle {
+  padding: 50px 0 100px 0;
 }
+
+/* Grid for party members */
 .party_grid {
   display: grid;
   max-width: 1000px;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  /* From https://css.glass */
-background: rgba(97, 96, 96, 0.107);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
   row-gap: 50px;
   padding: 50px;
+  background: rgba(97, 96, 96, 0.07);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.party_sub{
-    text-align: center;
-    display: flex;flex-direction: column;
-    align-items: center;
+/* Individual party member container */
+.party_sub {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mavan{
-    display: flex;align-items: center;justify-content: center;
+
+/* Image wrapper */
+.mavan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Party member image */
 .party_img {
-  width: 200px;
-}
-.role{
-    font-family: "seasons";
-    font-weight: 800;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.role_name{
-    font-family: "libre";
+.party_sub:hover .party_img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Role title */
+.role {
+  font-family: "Seasons", cursive;
+  font-weight: 800;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #1a1a1a; /* soft wedding gold */
+  letter-spacing: 1px;
+}
+
+/* Party member name */
+.role_name {
+  font-family: "Libre", serif;
+  font-size: 16px;
+  margin-top: 5px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+/* ===== Responsive for tablets ===== */
+@media (max-width: 1024px) {
+  .party_grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    row-gap: 40px;
+  }
+
+  .party_img {
+    width: 180px;
+  }
+
+  .role {
+    font-size: 16px;
+  }
+
+  .role_name {
+    font-size: 14px;
+  }
+}
+
+/* ===== Responsive for mobile ===== */
+@media (max-width: 600px) {
+  .party_grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    row-gap: 30px;
+  }
+.wedding{
+    padding: 20px;
+}
+  .party_img {
+    width: 120px;
+  }
+
+  .role {
+    font-size: 14px;
+  }
+
+  .role_name {
+    font-size: 13px;
+  }
 }
