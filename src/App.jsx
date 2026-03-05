@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
 import Envelope from './components/env/Envelope';
@@ -16,50 +16,65 @@ import heys from "./assets/hey.jpg";
 import Reg from './components/reg/Reg';
 import Alls from './pages/schedule/Alls';
 import Travels from './pages/travel/Travels';
-import Pwd from './Pwd'; // import the password page
+import Pwd from './Pwd';
+import Rsvps from "./pages/rsvp/Rsvps";
+import AdminDashboard from "./pages/rsvp/AdminDashboard";
+
+// Wrapper to handle footer display
+const Layout = ({ children }) => {
+  const location = useLocation();
+  const hideFooter = location.pathname === "/admin";
+
+  return (
+    <>
+      {children}
+      {!hideFooter && (
+        <h2 className="footer">Adrian & Miranda © All Rights Reserved</h2>
+      )}
+    </>
+  );
+};
 
 const App = () => {
   const [unlocked, setUnlocked] = useState(false);
 
   if (!unlocked) {
-    // Show password page first
     return <Pwd onCorrect={() => setUnlocked(true)} />;
   }
 
-  // Once unlocked, render the full site
   return (
     <Router>
       <Nav />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Header title="SEPTEMBER 12, 2026  -  NEW YORK, NY" />
-              <Intro />
-              <Envelope />
-              <Itinerary />
-              <div className="hey">
-                <img src={heys} alt="" className="hey_img" />
-              </div>
-              <Things />
-              <Count />
-              <Reg />
-              <Dresscode />
-              <Story />
-              <Faq />
-            </>
-          }
-        />
-
-        {/* Example of other pages */}
-        <Route path="/wedding-party" element={<All />} />
-        <Route path="/travel-info" element={<Travels />} />
-        <Route path="/wedding-schedule" element={<Alls />} />
-        <Route path="/story" element={<Story />} />
-      </Routes>
-
-      <h2 className="footer">Adrian & Miranda © All Rights Reserved</h2>
+      <Layout>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header title="SEPTEMBER 12, 2026  -  NEW YORK, NY" />
+                <Intro />
+                <Envelope />
+                <Itinerary />
+                <div className="hey">
+                  <img src={heys} alt="" className="hey_img" />
+                </div>
+                <Things />
+                <Count />
+                <Reg />
+                <Dresscode />
+                <Story />
+                <Faq />
+              </>
+            }
+          />
+          <Route path="/wedding-party" element={<All />} />
+          <Route path="/travel-info" element={<Travels />} />
+          <Route path="/wedding-schedule" element={<Alls />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/rsvp" element={<Rsvps />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 };
