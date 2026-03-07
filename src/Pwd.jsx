@@ -17,7 +17,7 @@ const Pwd = ({ onCorrect }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password === correctPassword) {
-      localStorage.setItem("siteUnlocked", "true"); // Store unlocked state
+      localStorage.setItem("siteUnlocked", "true"); 
       onCorrect(); // Unlock the site
     } else {
       alert("Incorrect password!");

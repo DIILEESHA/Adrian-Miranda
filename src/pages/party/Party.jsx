@@ -1,38 +1,45 @@
 import "./p.css";
 import ams from "../../assets/am.png";
+import putri from "../../assets/putri.jpg";
+import c from "../../assets/c.jpg";
+import cd from "../../assets/d.jpg";
+import cde from "../../assets/cde.jpg";
+import cdef from "../../assets/cdef.jpg";
+import cdefg from "../../assets/cdefg.jpg";
+import cdefgh from "../../assets/cdefgh.jpg";
 const brides = [
   {
-    img: ams,
+    img: putri,
     role: "Matron of Honor",
     name: "Putri Kowl (Childhood)",
   },
   {
-    img: ams,
+    img: c,
 
     role: "Maid of Honor",
     name: "Angeline Valencia (College)",
   },
-  { img: ams, role: "Bridesmaid", name: "Jessica Zheng (Sorority) " },
+  { img: cd, role: "Bridesmaid", name: "Jessica Zheng (Sorority) " },
   {
-    img: ams,
+    img: cde,
 
     role: "Bridesmaid",
     name: "Elizabeth Ung (High School) ",
   },
   {
-    img: ams,
+    img: cdef,
 
     role: "Bridesmaid",
     name: "Virginta Rumedi (Cousin) ",
   },
   {
-    img: ams,
+    img: cdefg,
 
     role: "Bridesmaid",
     name: "Natasya Rumedi (Cousin) ",
   },
   {
-    img: ams,
+    img: cdefgh,
 
     role: "Bridesmaid",
     name: "Margreen Brown (Cousin) ",
@@ -68,7 +75,7 @@ const Party = () => {
             <div className="party_sub">
               <div key={index}>
                 <div className="mavan">
-                  <img src={i.img} alt="" className="party_img" />
+                  <img src={i.img} alt={i.role} className="party_img" />
                 </div>
                 <h1 className="role">{i.role}</h1>
                 <h2 className="role_name">{i.name}</h2>
